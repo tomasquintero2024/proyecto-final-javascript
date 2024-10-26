@@ -1,0 +1,150 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    -webkit-user-select: text; /* Soporte para Safari */
+    user-select: text; /* Soporte estándar */
+}
+
+/* Encabezado */
+header {
+    background-color: #4c023b;
+    padding: 20px;
+    color: #fff;
+    -webkit-user-select: none; /* Evitar selección en el encabezado */
+    user-select: none; /* Soporte estándar */
+}
+
+header h1 {
+    margin: 0;
+}
+
+#btnIniciarSesion {
+    background-color: #6e006e;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btnIniciarSesion:hover {
+    background-color: #4c023b;
+}
+
+/* Contenedor principal de productos */
+#productos {
+    padding: 20px;
+}
+
+#listaProductos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Estilo de cada tarjeta de producto */
+#listaProductos .producto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    will-change: transform; /* Optimización para la animación */
+    -webkit-user-select: none; /* Evitar selección en las tarjetas de productos */
+    user-select: none; /* Soporte estándar */
+}
+
+#listaProductos .producto:hover {
+    transform: translateY(-5px); /* Usamos transform para evitar reflujo */
+}
+
+/* Imagen de cada producto */
+#listaProductos .producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+/* Título del producto */
+#listaProductos .producto h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #4c023b;
+}
+
+/* Precio del producto */
+#listaProductos .producto p {
+    font-size: 1em;
+    color: #6e006e;
+    margin: 5px 0 15px;
+}
+
+/* Botón de agregar al carrito */
+#listaProductos .producto button {
+    background-color: #4c023b;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#listaProductos .producto button:hover {
+    background-color: #6e006e;
+}
+
+/* Estilos para el resumen del carrito */
+#carrito {
+    padding: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#resumenCarrito {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#resumenCarrito p {
+    font-size: 1em;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* Botón de finalizar compra */
+#btnFinalizarCompra {
+    background-color: #4c023b;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    display: block;
+    margin: 15px auto;
+    transition: background-color 0.3s ease;
+}
+
+#btnFinalizarCompra:hover {
+    background-color: #6e006e;
+}
